@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+body {
+  background-color: #bbb;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+header {
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #0375b4;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding:0 10px;
+}
+
+ul li {
+  color: white;
+  background-color: #33b5e5;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+li:hover {
+  background-color: #0099cc;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+li:active {
+  background-color: #0099cc;
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0);
+}
+
+article {
+  margin: 10px;
+  text-align: justify;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2px;}
+
+aside {
+  padding: 10px;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+.container {
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: #135fa5;
+  font-size: 13px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+footer p {
+  float: left;
+  margin: 16px 25px;
+}
+
+#data {
+  float: right;
+  margin: 16px 25px;
+}
+
+/* for mobile phones */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* for tablets */
+@media only screen and (min-width: 600px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  ul {
+    font-size: 120%;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  aside {
+    overflow-y: scroll;
+    max-height: 800px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+
+  section img {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 2px;
+  }
+}
