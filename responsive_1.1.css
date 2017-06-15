@@ -99,6 +99,53 @@ footer p {
   margin: 16px 25px;
 }
 
+.anim {
+  height: 55px;
+  width: 60px;
+  background: yellow;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  animation: animacja 5s infinite alternate 0.5s;
+  font-weight: 900;
+  border-radius: 50%;
+  text-align: center;
+  transition: transform 1.5s;
+  box-shadow: 10px 10px 20px rgba(2,2,2,0.7);
+  z-index: 10;
+}
+
+.anim:active {
+  background: url("picture/giphy.gif");
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-origin: border-box;
+  animation: none;
+  border-radius: 0%;
+  transition: transform 0s;
+}
+
+.anim:hover {
+   transform: rotateY(2160deg) rotateX(3600deg) rotateZ(1080deg);
+}
+
+.anim:active div {
+    opacity: 0;
+}
+
+@keyframes animacja {
+  0% {background-color: yellow; left: 8%; bottom: 12%; color: black;}
+  17% {background-color: red; left: 62%; bottom: 25%; color: yellow;}
+  34% {background-color: orange; left: 30%; bottom: 7%; color: white;}
+  51% {background-color: yellow; left: 92%; bottom: 25%; color: blue;}
+  67% {background-color: green; left: 45%; bottom: 3%; color: white;}
+  83% {background-color: blue; left: 15%; bottom: 22%; color: yellow;}
+  100% {background-color: darkblue; left: 78%; bottom: 12%; color: orange;}
+}
+
 /* for mobile phones */
 [class*="col-"] {
   width: 100%;
