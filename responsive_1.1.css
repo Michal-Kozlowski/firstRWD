@@ -99,7 +99,7 @@ footer p {
   margin: 16px 25px;
 }
 
-.anim {
+#anim {
   height: 55px;
   width: 60px;
   background: yellow;
@@ -115,7 +115,7 @@ footer p {
   z-index: 10;
 }
 
-.anim:active {
+#anim:active {
   background: url("picture/giphy.gif");
   bottom: 0px;
   left: 0px;
@@ -128,22 +128,22 @@ footer p {
   transition: transform 0s;
 }
 
-.anim:hover {
+#anim:hover {
    transform: rotateY(2160deg) rotateX(3600deg) rotateZ(1080deg);
 }
 
-.anim:active div {
+#anim:active div {
     opacity: 0;
 }
 
 @keyframes animacja {
   0% {background-color: yellow; left: 8%; bottom: 12%; color: black;}
-  17% {background-color: red; left: 62%; bottom: 25%; color: yellow;}
-  34% {background-color: orange; left: 30%; bottom: 7%; color: white;}
-  51% {background-color: yellow; left: 92%; bottom: 25%; color: blue;}
-  67% {background-color: green; left: 45%; bottom: 3%; color: white;}
-  83% {background-color: blue; left: 15%; bottom: 22%; color: yellow;}
-  100% {background-color: darkblue; left: 78%; bottom: 12%; color: orange;}
+  17% {background-color: red; left: 22%; bottom: 65%; color: yellow;}
+  34% {background-color: orange; left: 0; bottom: 47%; color: white;}
+  51% {background-color: yellow; left: 12%; bottom: 5%; color: blue;}
+  67% {background-color: green; left: 2%; bottom: 70%; color: white;}
+  83% {background-color: blue; left: 21%; bottom: 22%; color: yellow;}
+  100% {background-color: darkblue; left: 8%; bottom: 42%; color: orange;}
 }
 
 /* for mobile phones */
